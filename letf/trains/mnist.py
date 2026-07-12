@@ -1,0 +1,1 @@
+"""Builtin MNIST training demo."""

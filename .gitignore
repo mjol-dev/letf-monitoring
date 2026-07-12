@@ -1,0 +1,23 @@
+# Runtime / local
+experiments/*/
+!experiments/.gitkeep
+awo_log.jsonl
+*.png
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.env
+
+# Test / tooling
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/

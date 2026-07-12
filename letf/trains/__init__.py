@@ -1,0 +1,1 @@
+"""Builtin train target registry."""

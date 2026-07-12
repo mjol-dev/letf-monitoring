@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "letf"
+version = "0.1.0"
+description = "Lightweight Experiment Training Framework with AWO observability"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "click",
+    "pyyaml",
+    "torch",
+    "torchvision",
+    "awo-observability",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+letf = "letf.cli:cli"
+
+[tool.hatch.build.targets.wheel]
+packages = ["letf"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
